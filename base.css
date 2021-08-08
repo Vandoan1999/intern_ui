@@ -1,0 +1,268 @@
+*{
+    --color-yellow: #ffbb00;
+    box-sizing: border-box;
+}
+
+.btn {
+    /* min-width: 100px; */
+    background-color: var(--color-yellow);
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px 13px 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s linear;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.session-container{
+    width: 100%;
+}
+.session-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.session-title{
+    font-size:3rem;
+    font-weight: 400;
+    color: #333333;
+}
+.session-title > span {
+    font-weight: 700;
+    color: var(--color-yellow);
+}
+.session-icon-box{
+    max-width: 313px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.session-icon-box::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 0.5px;
+    background-color: #e1e1e1;
+    top: 50%;
+    left:  34px;
+    transform: translateY(-50%);
+}
+.session-icon-box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 0.5px;
+    background-color: #e1e1e1;
+    top: 50%;
+    right: 34px;
+    transform: translateY(-50%);
+}
+.session-icon{
+    height: 20px;
+    color: #e1e1e1;
+}
+.session-description{
+ font-size: 0.9rem;
+    color: #7e7e7e;
+}
+
+
+
+
+
+.card{ 
+    width: 100%;
+}
+.card-img-top{
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-body{
+    padding: 15px;
+}
+.card-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333333;
+}
+.card-text{
+    color: #7e7e7e;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* share-date----------------------------------------------------- */
+.shared-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shared-icon{
+    height: 20px;
+    color: #ffbb00;
+}
+.shared-address{
+    margin-left: 5px;
+    font-size: 0.75rem;
+    color: #7e7e7e;
+}
+
+
+
+.col-lg-20pt {
+    flex: 0 0 20%;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+/* select */
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: transparent;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #555;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 101%;
+    left: 15px;
+    width: 89%;
+    border-radius: 5px;
+    z-index: 99;
+  }
+  .select-selected{
+      color: #fff;
+      font-size: 0.9rem;
+  }
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+/* input type date */
+
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #fff;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 0.9rem;
+    border:1px solid #fff;
+    background:transparent;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    border-radius: 5px;
+}
+
+input[type="date"], focus {
+    color: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+.d-block{
+    display: block;
+}
