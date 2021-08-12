@@ -983,3 +983,40 @@ justify-content: flex-start;
 .row.blog-row > div {
     margin: 0;
 } 
+
+.list .shared-date:first-child {
+    margin-right: 5px;
+}
+
+.list-ads {
+    display: block;
+    aspect-ratio: 16/9;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.list-content {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.list-content span {
+    font-size: 0.7rem;
+    background-color: #eaeaea;
+    margin: 5px;
+    color: #666666;
+    padding: 6px;
+}
+
+.form-event-search .form-group {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+.select-box_icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+}
