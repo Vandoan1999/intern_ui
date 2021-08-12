@@ -745,3 +745,143 @@ justify-content: flex-start;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+
+
+/* abount us */
+
+.baner {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    min-height: 285px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.nav-about-us {
+    background-color: #FFF;
+}
+
+.nav-about-us .my-nav-link {
+    color: black;
+    font-weight: 700;
+}
+
+.nav-about-us .nav-cart.cart-plus {
+    color: var(--color-yellow);
+    font-size: 0.9rem;
+}
+
+.nav-about-us .nav-login.login ,.nav-about-us .nav-logout.logout {
+    background-color: #6600ff;
+    border-right: 1px solid #5e00eb;
+
+}
+.nav-about-us .nav-logout.logout {
+    border-left: 1px solid #5e00eb;
+
+}
+
+.nav-about-us .my-navbar-brand {
+    color: black;
+}
+
+.nav-about-us .navbar-items-hover {
+    border-top:  3px solid #6600ff;
+}
+
+
+.my-nav-item.my-nav-item-about-us:hover .my-nav-link {
+   color: #6600ff;
+   text-shadow: none;
+   text-decoration: none;
+}
+
+.baner .baner-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  z-index: 99;
+  margin-left: 37px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.baner-content .description span{
+    margin-left: 20px;
+    color: var(--color-yellow);
+}
+.baner-content .description::after {
+    content: '>';
+    position: relative;
+    color: #fff;
+    left: -77px;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.services .card-icon-svg {
+    height: 40px;
+    color: inherit;
+}
+.services .card-icon {
+    height: 110px;
+    width:  110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-yellow);
+    border-radius: 50%;
+    color: var(--color-yellow);
+    transition: color 0.5s;
+}
+.services .card-icon:hover {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    color: #fff;
+}
+.services .card-title {
+    color: var(--color-yellow);
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+.services .card-description {
+    font-size: 0.9rem;
+    color: #9c9c9c;
+}
+
+.carousel.carousel-about-us {
+    height: 375px;
+    min-height: 375px;
+    margin-bottom: 150px;
+}
+
+.img-gallery-link{
+}
+.img-gallery-img{
+    font-size: 0;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+   
+}
+.row-ct-gallery .col-lg-3{
+    padding: 0 5px;
+}
+
+.row-ct-gallery > div {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
