@@ -271,3 +271,144 @@ input[type="date"], focus {
 .d-block{
     display: block;
 }
+
+
+
+
+
+
+
+
+
+/* form */
+
+
+.form-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-column .form-group {
+    max-width: 835px;
+    margin: 10px 20%;
+    height: 50px;
+}
+
+.form-column .form-control {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    caret-color: #555;
+}
+
+.form-column .form-group_textarea{
+    max-width: 835px;
+    margin: 10px 20%;
+    min-height: 138px;
+
+}
+.form-column .form-control_textarea{
+        padding-top: 10px;
+}
+
+.form-column .form-control::-webkit-input-placeholder {
+    color: #666;
+  }
+  .form-column .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #666;
+  }
+  .form-column .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #666;
+  }
+  .form-column .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #666;
+  }
+
+
+  /* check box */
+  .check-marks-container {
+      position: relative;
+      height: 30px;
+      display: block;
+      max-width: 835px;
+      margin: 10px 20%;
+  }
+  .check-mark {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      border: 1px solid #e9e9e9;
+  }
+
+  .check-mark::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 7px;
+      height: 15px;
+      background-color: transparent;
+      top: 0;
+      border-radius: 0px;
+      border-right: 2.5px solid black;
+      border-bottom: 2.5px solid black;
+      transform: rotate(41deg) translateY(-50%);
+      left: 1px;
+      display: none;
+      opacity: 0;
+      animation:  fade 0.5s;
+  }
+  @keyframes fade {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+.check-marks-container::before {
+    position: absolute;
+    content: 'I consent to Arven Studio collecting my details through this form.';
+    top: 48%;
+    transform: translateY(-50%);
+    left: 32px;
+    line-height: 30px;
+    color: #555;
+    font-size: 0.8rem;
+}
+.check-marks-container::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+.check-box {
+    display: none;
+}
+.check-box:checked + .check-mark::after{
+   display: block;
+   opacity: 1;
+}
+
+
+.btn-v1{
+    height: 45px;
+    min-width: 100px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+}

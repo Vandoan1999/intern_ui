@@ -885,3 +885,53 @@ justify-content: flex-start;
     margin-top: 5px;
     margin-bottom: 0px;
 }
+
+.gt-map.gt-google-maps{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel.carousel-contact-us {
+    height: 90vh;
+}
+
+.contact-us-description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.contact-us-description{
+    font-size: 0.8rem;
+    color: #666666;
+    line-height: 25px;
+}
+
+.contact-us-description:first-child {
+    margin-bottom: 30px;
+}
+
+.contact-us-description:last-child {
+    margin-top: 30px;
+}
+.contact-us-description span{
+    color: black;
+    font-weight: 700;
+
+}
+
+.btn-form-ct {
+    background-color: var(--color-yellow);
+    color: #fff;
+    border: 1px solid var(--color-yellow);
+    transition: all 0.5s;
+}
+.btn-form-ct:hover {
+    background-color: transparent;
+    color: var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+}
