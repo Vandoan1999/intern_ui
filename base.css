@@ -101,6 +101,7 @@
 
 .card{ 
     width: 100%;
+    position: relative;
 }
 .card-img-top{
     aspect-ratio: 16/9;
@@ -117,6 +118,7 @@
     color: #333333;
 }
 .card-text{
+    margin-top: 20px;
     color: #7e7e7e;
     font-size: 0.9rem;
 }
@@ -126,19 +128,32 @@
 
 
 /* share-date----------------------------------------------------- */
+/* div */
 .shared-date{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
+/* svg . icon */
 .shared-icon{
     height: 20px;
     color: #ffbb00;
 }
+
+/* span */
 .shared-address{
     margin-left: 5px;
     font-size: 0.75rem;
     color: #7e7e7e;
+}
+
+.list {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.list-title {
+    font-size: 1.2rem;
 }
 
 
