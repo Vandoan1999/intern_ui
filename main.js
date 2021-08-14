@@ -121,6 +121,22 @@ $(function () {
      $(this).parent().siblings().slideToggle("slow");
  })
  
+ // option select
+ $('.select').on('click',function(){
+   $(this).find('.select-option_list').fadeToggle(300);
+ })
+ $('.select-option_list').on('click',function(e){
+   e.stopPropagation()
+ })
+ $('.select-option_item').on('click',function(){
+  $(this).parent().siblings('.select_title').text( $(this).text())
+  $(this).parent().fadeToggle(300);
+  $(this).append( $(this).siblings('.selected_color').find('i.selected_color'))
+  $(this).siblings('.selected_color').removeClass('selected_color')
+  $(this).addClass('selected_color')
+  
+ 
+ })
 
 });
 

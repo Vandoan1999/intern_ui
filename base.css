@@ -460,31 +460,85 @@ input[type="date"], focus {
 
 /* option - select */
 .form-group-select {
+    --height:50px;
     max-width: 835px;
     margin: 10px 28px;
-    height: 50px;
+    height: var(--height);
     position: relative;
+    z-index: 99;
 }
 .form-group-select .my-select {
     display: none;
 }
 
-.select-box {
+.select{
     background-color: transparent;
     width: 100%;
     height: 100%;
-    outline: none;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
     position: relative;
     padding-left: 20px;
     font-size: 0.8rem;
-    line-height: 44px;
     color: #666;
 }
 
-.select-box::after {
-    position: absolute;
-    top: 0;
+.select_title{
+    line-height: var(--height);
+    display: block;
 }
 
+.select_icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.select-option_list{
+    position: absolute;
+    top: 103%;
+    box-shadow: 1px 1px 5px;
+    display: block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 5px;
+    max-height: 50vh;
+    overflow-y: scroll;
+    display: none;
+}
+.select-option_item{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    
+}
+
+.select-option_item:hover {
+    color: var(--color-yellow);
+}
+.select-option_mark {
+    font-size: 0.6rem;
+    margin-right: 10px;
+    display: block;
+}
+.selected_color {
+    color: var(--color-yellow);
+
+}
+.form-control-date-event-search{
+    appearance: none;
+}
+.form-control-date-event-search::-webkit-calendar-picker-indicator {
+}
+.form-control-date-event-search:not(.has-value):before{
+    color:  #666;
+    content: attr(placeholder);
+  }
+  
